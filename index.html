@@ -357,6 +357,58 @@
             background: rgba(100, 255, 218, 0.15);
         }
 
+        /* Experience & Education Section */
+        .experience {
+            background: var(--dark-accent);
+            position: relative;
+        }
+
+        .experience-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+
+        .timeline-col h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            margin-bottom: 25px;
+            color: var(--light-text);
+        }
+
+        .timeline-item {
+            background: rgba(100, 255, 218, 0.1);
+            border-left: 3px solid #64ffda;
+            border-radius: 4px;
+            padding: 18px 22px;
+            margin-bottom: 20px;
+            transition: var(--transition);
+        }
+
+        .timeline-item:hover {
+            transform: translateY(-3px);
+            background: rgba(100, 255, 218, 0.15);
+        }
+
+        .timeline-item h4 {
+            color: var(--light-text);
+            font-size: 1.1rem;
+            margin-bottom: 6px;
+        }
+
+        .timeline-date {
+            display: block;
+            color: var(--light-accent);
+            font-size: 0.9rem;
+            opacity: 0.8;
+            margin-bottom: 10px;
+        }
+
+        .timeline-item p {
+            color: var(--light-accent);
+            font-size: 0.95rem;
+        }
+
         /* Projects Section */
         .projects {
             position: relative;
@@ -662,7 +714,8 @@
             
 
             .about-content,
-            .contact-content {
+            .contact-content,
+            .experience-content {
                 grid-template-columns: 1fr;
             }
 
@@ -753,6 +806,7 @@
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -830,6 +884,9 @@ I'm committed to using technology to make an impact—across agriculture, logist
         </div>
     </section>
 
+    <!-- Experience & Education Section -->
+    <
+
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
@@ -901,6 +958,48 @@ I'm committed to using technology to make an impact—across agriculture, logist
                         </div>
                     </div>
                 </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="assets/images/pos.png" alt="">
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>POS system</h3>
+                        <p>SaleTap a point-of-sale desktop app with real-time multi-store sync to a FastAPI cloud backend, covering sales, inventory, pre-orders, and reporting.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Tailwind</span>
+                            <span class="tag">FastAPI</span>
+                            <span class="tag">PostgreSQL</span>
+                            
+                        </div>
+                        <div class="project-links">
+                            <a href="https://file-optimizer.onrender.com/"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="assets/images/finance_dashboard.png" alt="">
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Finance Coach</h3>
+                        <p>A personal finance web app for grad students — track accounts, budgets, recurring bills, savings goals, and a simulated credit score, with AI-generated insights</p>
+                            <div class="project-tags">
+                            <span class="tag">Node/ TypeScript</span>
+                            <span class="tag">React</span>
+                            <span class="tag">Tailwind</span>
+                            
+                        </div>
+                        <div class="project-links">
+                            <a href="https://file-optimizer.onrender.com/"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                
 
                 <!-- <div class="project-card">
                     <div class="project-img">
